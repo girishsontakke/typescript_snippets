@@ -16,13 +16,9 @@ function Log2(
   console.log(target, propertyName, descriptor);
 }
 
-function Log3(
-  target: any,
-  propertyName: string,
-  descriptor: PropertyDescriptor
-) {
+function Log3(target: any, methodName: string, descriptor: PropertyDescriptor) {
   console.log("Method decorator");
-  console.log(target, propertyName, descriptor);
+  console.log(target, methodName, descriptor);
 }
 
 function Log4(target: any, propertyName: string, index: number) {
